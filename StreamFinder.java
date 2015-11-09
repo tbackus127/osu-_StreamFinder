@@ -24,7 +24,7 @@ public class StreamFinder {
   //-----------------------------------------------------------------------------------------------------------------------------------------------------------
   
   // The path to your osu! songs directory (use two backslashes for directories)
-  private static final String OSU_DIR = "C:\\Program Files (x86)\\osu!\\Songs";
+  private static final String OSU_DIR = System.getProperty("user.home") + "\\AppData\\Local\\osu!\\Songs";
   
   // Filename to output list of streams to (uses same directory as the program was ran from)
   private static final String OUTPUT_FILE = "streamyMaps.txt";
